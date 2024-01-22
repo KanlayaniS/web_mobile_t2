@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <link rel="stylesheet" href="./nav.css" />
+      <link rel="stylesheet" href="./detail.css" />
+      <!-- google icon -->
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      />
+      <title>Lab2 : พาราโนมา</title>
+    </head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <input type="checkbox" id="nav-cb" />
+    <label for="nav-cb" class="menu"></label>
+    <nav>
+      <div class="logo">
+        <a href="/">
+          <img src="./work1/bg2.png" alt="LOGO" />
+        </a>
+      </div>
+      <label for="nav-cb" class="menu"
+        ><span class="material-symbols-outlined">menu</span></label
+      >
+      <div class="nav-link">
+        <label for="nav-cb" class="close-btn"
+          ><span class="material-symbols-outlined">close</span></label
+        >
+        <ul>
+          <li><a href="index.html">หน้าแรก</a></li>
+          <li><a href="work1.html">เกมส์</a></li>
+          <li><a href="work2_2.html">Lab2 : พาราโนมา</a></li>
+          <li><a href="work3.html">Lab3 : จับคู่ภาพ</a></li>
+        </ul>
+      </div>
+    </nav>
+    <a-scene>
+      <!-- พื้นหลัง paro -->
+      <a-sky src="work1/mobilebg1.jpg"></a-sky>
+
+      <!-- box position คือขนาดกล่อง, animation -->
+      <a-box
+        position="-1 0.5 -3"
+        rotation="0 45 0"
+        src="work1/bg2.png"
+        animation="property: rotation; to: 0 405 0; loop: true; dur: 5000"
+      >
+        <a-text value="Kanlayani Sonsing" position="1 0.75 -3" color="#f0f0f0">
+        </a-text>
+        <a-text value="643021216-0" position="0 0 -4" color="#f0f0f0"> </a-text>
+        <a-text value="WORK2" position="1 1 -2.5" color="#f0f0f0"> </a-text>
+      </a-box>
+    </a-scene>
+  </body>
+</html>

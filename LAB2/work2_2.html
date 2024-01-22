@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!-- พื้นหลัง paro -->
+      <a-sky src="mobilebg1.jpg"></a-sky>
+
+      <!-- box position คือขนาดกล่อง, animation -->
+      <a-box
+        position="-1 0.5 -3"
+        rotation="0 45 0"
+        src="bg2.png"
+        animation="property: rotation; to: 0 405 0; loop: true; dur: 5000"
+      >
+        <a-text value="Kanlayani Sonsing" position="1 0.75 -3" color="#f0f0f0">
+        </a-text>
+        <a-text value="643021216-0" position="0 0 -4" color="#f0f0f0"> </a-text>
+        <a-text value="WORK2" position="1 1 -2.5" color="#f0f0f0"> </a-text>
+      </a-box>
+    </a-scene>
+  </body>
+</html>
